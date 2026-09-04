@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AvaChat"
+rootProject.name = "HadiAI"
 include(":core")
 include(":app")

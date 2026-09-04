@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">AvaChat</string>
+    <string name="app_name" translatable="false">HadiAI</string>
     <string name="welcome_title">How can I help you today?</string>
     <string name="suggestion_explain">Explain something</string>
     <string name="suggestion_write">Write something</string>
