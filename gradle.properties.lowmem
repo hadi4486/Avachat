@@ -1,0 +1,12 @@
+# Memory-constrained sandbox: cgroup hard cap ~954MiB, ~330MiB used by the
+# host agent. Kotlin/Compose compilation of the full app module exceeds what
+# fits alongside the agent. This override file documents the sandbox-only
+# settings; remove it (or edit freely) on a normal dev machine.
+org.gradle.jvmargs=-Xmx440m -Xms64m -XX:MaxMetaspaceSize=140m -XX:MaxDirectMemorySize=16m -XX:ReservedCodeCacheSize=32m -XX:CompressedClassSpaceSize=32m -XX:+UseSerialGC -XX:ActiveProcessorCount=1
+org.gradle.parallel=false
+org.gradle.caching=true
+org.gradle.workers.max=1
+kotlin.compiler.execution.strategy=in-process
+ksp.use.ksp2=false
+ksp.incremental=false
+kotlin.incremental=false
